@@ -11,16 +11,9 @@ import {
     trustWallet,
     ledgerWallet,
 } from '@rainbow-me/rainbowkit/wallets';
-import {
-    arbitrum,
-    base,
-    mainnet,
-    optimism,
-    polygon,
-    sepolia,
-} from 'wagmi/chains';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { polygonMumbai, sepolia } from 'wagmi/chains';
 import { WagmiProvider } from 'wagmi';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const { wallets } = getDefaultWallets();
 
@@ -35,11 +28,7 @@ const config = getDefaultConfig({
         },
     ],
     chains: [
-        mainnet,
-        polygon,
-        optimism,
-        arbitrum,
-        base,
+        polygonMumbai,
         ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
     ],
     ssr: true,
