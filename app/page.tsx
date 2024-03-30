@@ -24,7 +24,7 @@ export default function Home() {
     }, [isConnected, router]);
 
     return (
-        <div className='flex flex-col  justify-center'>
+        <div className='flex flex-col justify-center mx-20 max-sm:mx-5'>
             {/* Navbar */}
             <div className={`${spaceGrotesk.className} flex justify-center items-center w-full text-black text-2xl font-bold mt-4 gap-1`}>
                 <Image src="/assets/logo.svg" alt='logo' width={32} height={32} />
@@ -33,7 +33,7 @@ export default function Home() {
             {/* Hero */}
             <div className='flex mt-24 items-center justify-between max-sm:flex-col max-sm:mt-12'>
                 {/* Text Part */}
-                <div className='flex flex-col gap-4 w-1/2 items-center max-sm:w-full'>
+                <div className='flex flex-col gap-4 w-1/2 max-sm:items-center max-sm:w-full'>
                     {/* Image 1 */}
                     {/* Header */}
                     <h1 className={`${spaceGrotesk.className} text-6xl max-sm:text-center max-sm:text-3xl font-bold text-[#6F00FF]`}>{`Reimagine what's possible`}</h1>
