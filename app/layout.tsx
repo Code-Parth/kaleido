@@ -17,12 +17,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className} style={{background:'#DCC1FF'}}>
-                <div className="mx-20 max-sm:mx-5">
-                    <Providers>
-                        {children}
-                    </Providers>
-                </div>
+            <body className={inter.className} style={{ background: '#DCC1FF' }}>
+
+                <Providers>
+                    {children}
+                </Providers>
+
             </body>
         </html>
     );
