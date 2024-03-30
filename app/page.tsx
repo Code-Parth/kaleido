@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { Space_Grotesk } from 'next/font/google';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
+
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function Home() {
