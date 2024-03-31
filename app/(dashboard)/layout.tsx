@@ -17,7 +17,6 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className} style={{ background: '#DCC1FF' }}>
                 <Providers>
-                    <Sidebar />
                     {children}
                 </Providers>
             </body>

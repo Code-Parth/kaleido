@@ -48,7 +48,7 @@ export default function Sidebar() {
     }, []);
 
     return (
-        <>
+        <div>
             {windowWidth && windowWidth > 1024 ? (
                 // Desktop Sidebar
                 < div className="fixed flex flex-col w-1/6 h-screen border-r border-[#A763FF] mx-20 ">
@@ -228,9 +228,7 @@ export default function Sidebar() {
                         </div>
                     </div>
                 </>
-
-            )
-            }
-        </>
+            )}
+        </div>
     );
 }

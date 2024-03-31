@@ -21,20 +21,49 @@ export default function Marketplace() {
 
         // Fetch all the details of every NFT from the contract and display
         const items = await Promise.all(transaction.map(async i => {
-            const tokenURI = await contract.tokenURI(i.tokenId);
+            // const tokenURI = await contract.tokenURI(i.tokenId);
             // console.log(tokenURI);
-            const meta = fetch(tokenURI).then(response => {
+            // const metadata = await tokenURI.json();
+
+            try {
+                const tokenURI = await contract.tokenURI(i.tokenId);
+                console.log("Token URI:", tokenURI);
+
+                // Fetch JSON data from the token URI
+                const response = await fetch(tokenURI);
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    // throw new Error(`Failed to fetch data from ${tokenURI}`);
+                    console.error(`Failed to fetch data from ${tokenURI}`);
                 }
-                return response.json();
-            })
-                .then(data => {
-                    console.log('Data received:', data);
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
+
+                // Parse JSON data
+                const jsonData = await response.json();
+
+                // Do something with the parsed JSON data
+                console.log("JSON Data:", jsonData);
+
+                return jsonData; // or whatever you want to do with the data
+            } catch (error) {
+                console.error("Error fetching token URI:", error);
+                return null; // Or handle the error appropriately
+            }
+            // console.log(metadata);
+
+            // const metadata = JSON.parse(tokenURI);
+            // console.log(metadata);
+            // console.log(tokenURI);
+            // const meta = fetch(tokenURI).then(response => {
+            //     if (!response.ok) {
+            //         throw new Error('Network response was not ok');
+            //     }
+            //     return response.json();
+            // })
+            //     .then(data => {
+            //         console.log('Data received:', data);
+            //     })
+            //     .catch(error => {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     });
             // console.log("----------------------------",meta);
             // const meta = await axios.get(tokenURI);
             // console.log(meta);
