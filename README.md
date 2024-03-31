@@ -11,6 +11,7 @@ Kaleido is a revolutionary Web3 social media platform that empowers creators and
 ## Table of Contents
 
 * Project Overview: #project-overview
+* Core DAO blockchain (Testnet)  Details:
 * Features: #features
 * Getting Started: #getting-started
 * Technology Stack: #technology-stack
@@ -25,6 +26,18 @@ Current Web3 social media platforms struggle to balance user-friendly content cr
 Q. How Kaleido Solves this ?
 
 A.  As the tagline portrays , 'Reimagine what's possible.', Kaleido is a Social Media platofrm that broadens your content genration possibilities with AI and contribute in engaging the communnity in a better way. Also, creators can monetize their content by the repost functionality as user has to perform a  transaction over there. And, they get direct fan support and can also create token gated communities on the basis of NFTs owned by them.
+
+
+
+## Core DAO blockchain (Testnet)  Details:
+
+* Core smart contract address: 0x537173b9E1fFB2065e947fbe589681393EeD169a
+* Core Transaction Hash: https://scan.test.btcs.network/address/0x537173b9E1fFB2065e947fbe589681393EeD169a
+
+  ![image](https://github.com/Code-Parth/kaleido/assets/82398107/af1d5e1b-5cd2-4804-8220-5c15e7df51cd)
+ 
+
+
 
 ## Features
 
