@@ -10,14 +10,13 @@ Kaleido is a revolutionary Web3 social media platform that empowers creators and
 
 ## Table of Contents
 
-* Project Overview: #project-overview
+* Project Overview: 
 * Core DAO blockchain (Testnet)  Details:
-* Features: #features
-* Getting Started: #getting-started
-* Technology Stack: #technology-stack
-* Contributing: #contributing
-* License: #license
-* Team (Optional): #team
+* Features: 
+* Getting Started: 
+* Technology Stack: 
+* Contributing: 
+* License:
 
 ## Project Overview
 
@@ -52,12 +51,15 @@ A.  As the tagline portrays , 'Reimagine what's possible.', Kaleido is a Social 
 
 To set up and run Kaleido locally, follow these steps:
 
-1. **Prerequisites:**
-    * (List development tools and dependencies)
-2. **Installation:**
-    * (Provide clear instructions on installation)
-3. (Optional) **Tutorials:**
-    * Include screenshots or video tutorials for visual learners.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
 ## Technology Stack
 
@@ -82,5 +84,5 @@ Before contributing, please review our contribution guidelines: (Link to contrib
 
 ## License
 
-This project is licensed under the MIT License: (Link to the license)
+This project is licensed under the MIT License:
 
