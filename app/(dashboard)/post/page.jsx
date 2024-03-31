@@ -93,37 +93,8 @@ export default function SellNFT() {
     return (
         <>
             <div className="flex flex-row">
-                < div className="flex flex-row gap-10 w-1/6 h-screen border-r border-[#A763FF] mx-20 ">
-                    <div className='flex flex-col gap-10'>
-                        {/* Logo */}
-                        <Link href="/home" className={`${spaceGrotesk.className} flex items-center w-full text-black text-2xl font-bold mt-4 gap-1`}>
-                            <Image src="/assets/logo.svg" alt='logo' width={32} height={32} />
-                            Kaleido
-                        </Link>
-                        {/* Menu */}
-                        <div className='flex flex-col gap-6'>
-                            <div className={`${spaceGrotesk.className} flex flex-col gap-6`}>
-                                <div className='flex gap-1 text-lg items-center'>
-                                    <Image src="/assets/home.svg" alt='home' width={24} height={24} />
-                                    <Link href="/home">Home</Link>
-                                </div>
-                                <div className='flex gap-1 text-lg items-center'>
-                                    <Image src="/assets/discover.svg" alt='discover' width={24} height={24} />
-                                    <Link href="/discover">Discover</Link>
-                                </div>
-                                <div className='flex gap-1 text-lg items-center'>
-                                    <Image src="/assets/community.svg" alt='community' width={24} height={24} />
-                                    <Link href="/community">Community</Link>
-                                </div>
-                                <div className='flex gap-1 text-lg items-center'>
-                                    <Image src="/assets/profile.svg" alt='profile' width={24} height={24} />
-                                    <Link href="/profile">Profile</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex w-full justify-center items-center">
+                <Sidebar />
+                <div className="flex w-full h-screen justify-center items-center">
                     <div className="flex flex-col place-items-center mt-10" id="nftForm">
                         <form className="bg-white shadow-md rounded px-8 pt-4 pb-8 mb-4">
                             <h3 className="text-center font-bold text-purple-500 mb-8">Upload your NFT to the marketplace</h3>
