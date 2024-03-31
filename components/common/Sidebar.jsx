@@ -118,7 +118,7 @@ export default function Sidebar() {
         console.log(name, image);
     }
 
-    const [windowWidth, setWindowWidth] = useState < number | null > (null);
+    const [windowWidth, setWindowWidth] = useState(null);
 
     useEffect(() => {
         // Only run this effect client-side
